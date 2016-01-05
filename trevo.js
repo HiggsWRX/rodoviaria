@@ -40,7 +40,7 @@ function createMap21() {
     map.fitBounds(bounds);
 }
 
-$("#modal21mapa").on("shown.bs.modal", createMap21);
+$("#carreira21mapa").on("shown.bs.modal", createMap21);
 
 function createMap22() {
     var map;
@@ -83,7 +83,7 @@ function createMap22() {
     map.fitBounds(bounds);
 }
 
-$("#modal22mapa").on("shown.bs.modal", createMap22);
+$("#carreira22mapa").on("shown.bs.modal", createMap22);
 
 function createMap31() {
     var map;
@@ -126,7 +126,7 @@ function createMap31() {
     map.fitBounds(bounds);
 }
 
-$("#modal31mapa").on("shown.bs.modal", createMap31);
+$("#carreira31mapa").on("shown.bs.modal", createMap31);
 
 function createMap33() {
     var map;
@@ -169,4 +169,4 @@ function createMap33() {
     map.fitBounds(bounds);
 }
 
-$("#modal33mapa").on("shown.bs.modal", createMap33);
+$("#carreira33mapa").on("shown.bs.modal", createMap33);

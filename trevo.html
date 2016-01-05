@@ -38,44 +38,44 @@
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal21">Ver Horario</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira21">Ver Horario</a>
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal21mapa">Ver Paragens</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira21mapa">Ver Paragens</a>
             </div>
             <div class="col-md-12">
                 <h3>22 <small>Canaviais - Parque Industrial</small></h3>
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal22">Ver Horario</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira22">Ver Horario</a>
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal22mapa">Ver Paragens</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira22mapa">Ver Paragens</a>
             </div>
             <div class="col-md-12">
                 <h3>31 <small>25 Abril - Malagueira</small></h3>
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal31">Ver Horario</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira31">Ver Horario</a>
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal31mapa">Ver Paragens</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira31mapa">Ver Paragens</a>
             </div>
             <div class="col-md-12">
                 <h3>33 <small>Sra. da Saúde - Fontanas</small></h3>
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal33">Ver Horario</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira33">Ver Horario</a>
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal33mapa">Ver Paragens</a>
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#carreira33mapa">Ver Paragens</a>
             </div>
         </div>
     </div>
@@ -154,7 +154,7 @@
 
     <!-- MODALS -->
 
-    <div id="modal21" class="modal fade" role="dialog">
+    <div id="carreira21" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -177,7 +177,7 @@
         </div>
     </div>
 
-    <div id="modal22" class="modal fade" role="dialog">
+    <div id="carreira22" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -198,7 +198,7 @@
         </div>
     </div>
 
-    <div id="modal31" class="modal fade" role="dialog">
+    <div id="carreira31" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -221,7 +221,7 @@
         </div>
     </div>
 
-    <div id="modal33" class="modal fade" role="dialog">
+    <div id="carreira33" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -245,7 +245,7 @@
     </div>
 
     <!-- Modal paragens -->
-    <div id="modal21mapa" class="modal fade" role="dialog">
+    <div id="carreira21mapa" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -265,7 +265,7 @@
         </div>
     </div>
     
-    <div id="modal22mapa" class="modal fade" role="dialog">
+    <div id="carreira22mapa" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -285,7 +285,7 @@
         </div>
     </div>
     
-    <div id="modal31mapa" class="modal fade" role="dialog">
+    <div id="carreira31mapa" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -305,7 +305,7 @@
         </div>
     </div>
     
-    <div id="modal33mapa" class="modal fade" role="dialog">
+    <div id="carreira33mapa" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
             <!-- Modal content-->
@@ -326,6 +326,44 @@
     </div>
     
     <script src="trevo.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+
+            if(window.location.href.indexOf('#carreira21') != -1) {
+                $('#carreira21').modal('show');
+            }
+            
+            if(window.location.href.indexOf('#carreira22') != -1) {
+                $('#carreira22').modal('show');
+            }
+            
+            if(window.location.href.indexOf('#carreira31') != -1) {
+                $('#carreira31').modal('show');
+            }
+            
+            if(window.location.href.indexOf('#carreira33') != -1) {
+                $('#carreira33mapa').modal('show');
+            }
+            
+            if(window.location.href.indexOf('#carreira21mapa') != -1) {
+                $('#carreira21mapa').modal('show');
+            }
+            
+            if(window.location.href.indexOf('#carreira22mapa') != -1) {
+                $('#carreira22mapa').modal('show');
+            }
+            
+            if(window.location.href.indexOf('#carreira31mapa') != -1) {
+                $('#carreira31mapa').modal('show');
+            }
+            
+            if(window.location.href.indexOf('#carreira33mapa') != -1) {
+                $('#carreira33mapa').modal('show');
+            }
+
+        });
+    </script>
     
 </body>
 
