@@ -6,6 +6,9 @@
     <title>Autocarros Trevo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 
 <body>
@@ -39,7 +42,7 @@
             </div>
             <div class="col-sm-2">
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                Ver Paragens
+                <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal21mapa">Ver Paragens</a>
             </div>
             <div class="col-md-12">
                 <h3>22 <small>Canaviais - Parque Industrial</small></h3>
@@ -49,8 +52,7 @@
                 <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal22">Ver Horario</a>
             </div>
             <div class="col-sm-2">
-                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                Ver Paragens
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Ver Paragens
             </div>
             <div class="col-md-12">
                 <h3>31 <small>25 Abril - Malagueira</small></h3>
@@ -60,8 +62,7 @@
                 <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal31">Ver Horario</a>
             </div>
             <div class="col-sm-2">
-                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                Ver Paragens
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Ver Paragens
             </div>
             <div class="col-md-12">
                 <h3>33 <small>Sra. da Saúde - Fontanas</small></h3>
@@ -71,8 +72,7 @@
                 <a href="#" style="text-decoration: none" data-toggle="modal" data-target="#modal33">Ver Horario</a>
             </div>
             <div class="col-sm-2">
-                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                Ver Paragens
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Ver Paragens
             </div>
         </div>
     </div>
@@ -241,9 +241,29 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Modal paragens -->
+    <div id="modal21mapa" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
 
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Carreira 21</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="googleMap" style="width:800px;height:380px;margin: 0 auto"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="trevo.js"></script>
+    
 </body>
 
 </html>
